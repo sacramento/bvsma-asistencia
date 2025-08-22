@@ -1,0 +1,66 @@
+/* src/styles/Auth/Login.css */
+
+.login-container {
+  @apply min-h-screen flex items-center justify-center px-4 py-8;
+  background: linear-gradient(to right, #C41E3A08, #f5f5f5);
+}
+
+.login-card {
+  @apply w-full max-w-md bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200;
+}
+
+.login-header {
+  @apply bg-bombero-red text-white py-6 text-center;
+}
+
+.login-logo {
+  @apply h-12 object-contain mb-2;
+}
+
+.login-title {
+  @apply text-xl font-bold;
+}
+
+.login-subtitle {
+  @apply text-bombero-red-dark text-sm opacity-90;
+}
+
+.login-form {
+  @apply p-6 space-y-5;
+}
+
+.login-label {
+  @apply block text-sm font-medium text-bombero-dark mb-1;
+}
+
+.login-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md 
+         focus:outline-none focus:ring-2 focus:ring-bombero-red focus:border-transparent;
+}
+
+.login-error {
+  @apply bg-red-50 border border-red-200 text-red-700 text-sm p-3 rounded-md flex items-center gap-2;
+}
+
+.login-btn {
+  @apply w-full flex items-center justify-center py-2.5 px-4 rounded font-medium 
+         bg-bombero-red text-white hover:bg-bombero-red-dark 
+         focus:outline-none focus:ring-2 focus:ring-bombero-red-dark focus:ring-opacity-50
+         transition;
+}
+
+.login-btn:disabled {
+  @apply opacity-70 cursor-not-allowed;
+}
+
+.login-spinner {
+  @apply animate-spin -ml-1 mr-2 h-4 w-4 text-white;
+}
+
+.login-footer {
+  @apply bg-gray-50 px-6 py-4 text-center border-t border-gray-100;
+}
+
+.login-footer-text {
+  @apply text-xs text-gray-600;
+}

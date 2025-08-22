@@ -1,0 +1,38 @@
+/* src/styles/Dashboard/Sidebar.css */
+
+.sidebar {
+  @apply w-64 bg-bombero-dark text-bombero-light min-h-screen fixed left-0 top-0 z-20;
+}
+
+.sidebar-logo {
+  @apply flex items-center gap-2 px-6 py-4 border-b border-bombero-red-dark;
+}
+
+.sidebar-logo-img {
+  @apply h-8 object-contain;
+}
+
+.sidebar-logo-text {
+  @apply font-bold text-lg text-bombero-red;
+}
+
+.sidebar-nav {
+  @apply mt-4;
+}
+
+.sidebar-item {
+  @apply px-6 py-3 text-bombero-gray hover:bg-bombero-red-dark hover:text-white cursor-pointer 
+         transition flex items-center gap-3 text-sm;
+}
+
+.sidebar-item.active {
+  @apply bg-bombero-red bg-opacity-20 border-r-2 border-bombero-red text-white;
+}
+
+.sidebar-item.disabled {
+  @apply opacity-50 cursor-not-allowed hover:bg-transparent;
+}
+
+.sidebar-footer {
+  @apply absolute bottom-0 w-full px-6 py-4 border-t border-bombero-red-dark text-xs text-bombero-gray;
+}

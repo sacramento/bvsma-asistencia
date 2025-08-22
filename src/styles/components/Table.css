@@ -1,0 +1,33 @@
+/* src/styles/components/Table.css */
+
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table-header {
+  @apply bg-gray-50;
+}
+
+.table-header-cell {
+  @apply px-4 py-3 text-left text-xs font-medium text-bombero-dark uppercase tracking-wider;
+}
+
+.table-body {
+  @apply bg-white divide-y divide-gray-200;
+}
+
+.table-row {
+  @apply hover:bg-gray-50 transition;
+}
+
+.table-cell {
+  @apply px-4 py-3 text-sm text-bombero-dark;
+}
+
+.table-empty {
+  @apply text-center py-8 text-gray-500 text-sm;
+}

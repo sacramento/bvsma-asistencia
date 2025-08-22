@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bombero-gray text-bombero-dark min-h-screen antialiased;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-bombero-dark;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-medium focus:outline-none focus:ring-2 focus:ring-bombero-red-dark focus:ring-opacity-50 transition;
+  }
+  .btn-red {
+    @apply bg-bombero-red text-white hover:bg-bombero-red-dark;
+  }
+  .input {
+    @apply px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bombero-red focus:border-transparent;
+  }
+}

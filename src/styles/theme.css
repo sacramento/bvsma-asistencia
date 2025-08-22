@@ -1,0 +1,72 @@
+/* src/styles/theme.css */
+/* Variables de tema (simuladas con clases de Tailwind) */
+/* Como usamos Tailwind, no usamos CSS variables reales, pero podemos definir "alias" */
+
+.btn-primary {
+  @apply bg-bombero-red hover:bg-bombero-red-dark text-white font-medium py-2 px-4 rounded-md transition;
+}
+
+.btn-secondary {
+  @apply bg-bombero-gray hover:bg-gray-300 text-bombero-dark py-2 px-4 rounded-md transition;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-md transition;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden;
+}
+
+.card-header {
+  @apply px-6 py-4 border-b border-gray-200 bg-gray-50;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-bombero-dark;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-presente {
+  @apply bg-status-presente text-white;
+}
+
+.badge-tarde {
+  @apply bg-status-tarde text-white;
+}
+
+.badge-ausente {
+  @apply bg-status-ausente text-white;
+}
+
+.badge-licencia {
+  @apply bg-status-licencia text-white;
+}
+
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md 
+         focus:outline-none focus:ring-2 focus:ring-bombero-red focus:border-transparent;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table-header {
+  @apply bg-gray-50 text-left text-xs font-medium text-bombero-dark uppercase tracking-wider;
+}
+
+.table-row {
+  @apply hover:bg-gray-50 transition;
+}
+
+.table-cell {
+  @apply px-4 py-3 text-sm text-bombero-dark;
+}

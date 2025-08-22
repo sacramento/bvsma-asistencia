@@ -1,0 +1,21 @@
+/* src/styles/components/Button.css */
+
+.btn {
+  @apply px-4 py-2 rounded font-medium focus:outline-none focus:ring-2 transition;
+}
+
+.btn-red {
+  @apply bg-bombero-red text-white hover:bg-bombero-red-dark focus:ring-bombero-red-dark;
+}
+
+.btn-gray {
+  @apply bg-bombero-gray text-bombero-dark hover:bg-gray-300 focus:ring-gray-400;
+}
+
+.btn-sm {
+  @apply text-sm px-3 py-1;
+}
+
+.btn-loading {
+  @apply opacity-80 cursor-not-allowed;
+}

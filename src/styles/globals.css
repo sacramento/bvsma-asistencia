@@ -1,0 +1,32 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset suave y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-bombero-gray text-bombero-dark antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+}
+
+/* Scrollbars suaves (opcional) */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+*::-webkit-scrollbar-thumb {
+  @apply bg-bombero-red rounded;
+}

@@ -1,0 +1,21 @@
+/* src/styles/Dashboard/Header.css */
+
+.header {
+  @apply bg-white shadow-sm px-6 py-4 flex items-center justify-between border-b border-gray-200;
+}
+
+.header-title {
+  @apply text-xl font-semibold text-bombero-dark;
+}
+
+.header-actions {
+  @apply flex items-center gap-3;
+}
+
+.header-user {
+  @apply flex items-center gap-2 text-sm font-medium text-bombero-dark;
+}
+
+.header-user-avatar {
+  @apply w-8 h-8 rounded-full bg-bombero-red flex items-center justify-center text-white font-bold;
+}
